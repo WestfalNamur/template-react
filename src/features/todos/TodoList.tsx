@@ -13,9 +13,5 @@ export default function TodoList() {
     <TodoListItem key={p.name} name={p.name} />
   ));
 
-  return (
-    <div className={styles.card}>
-      <ul className={styles.list}>{starwarsList}</ul>
-    </div>
-  );
+  return <ul className={styles.list}>{starwarsList}</ul>;
 }
