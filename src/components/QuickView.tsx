@@ -1,3 +1,5 @@
+import QuickViewCard from "./QucikViewCard";
+
 const QuickView = () => {
   return (
     <div className="grid place-items-center min-h-screen">
@@ -10,7 +12,7 @@ const QuickView = () => {
           energy. One might wonder how such a big heart fits in such a small
           person?
         </p>
-        <div className="h-16 bg-blue-500 xs:h-auto xs:square"></div>
+        <QuickViewCard />
         <div className="h-16 bg-blue-500 xs:h-auto xs:square"></div>
         <div className="h-16 bg-pink-500 xs:h-auto xs:square"></div>
         <div className="h-16 bg-blue-500 xs:h-auto xs:square md:col-start-2"></div>
