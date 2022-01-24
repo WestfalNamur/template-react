@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import QuickView from "../components/QuickView";
 
-import Counter from "../features/counter/Counter";
 import styles from "../styles/Home.module.css";
 
 const IndexPage: NextPage = () => {
   return (
     <div className={styles.container}>
-      <h1>Hello, world!</h1>
+      <QuickView />
     </div>
   );
 };
