@@ -1,0 +1,11 @@
+.card {
+  @apply w-1/3 bg-white rounded-lg shadow;
+}
+
+.list {
+  @apply w-1/3 bg-white rounded-lg shadow;
+}
+
+.listel {
+  @apply p-6;
+}
