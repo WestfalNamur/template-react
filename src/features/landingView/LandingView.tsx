@@ -14,7 +14,10 @@ const LandingViewCard = (props: { className: string }): JSX.Element => {
       whileHover={{ scale: 1.1 }}
     >
       {hovered && (
-        <Image src="/dino.jpg" alt="Dino" layout="fill" objectFit="cover" />
+        // https://stackoverflow.com/questions/67421778/next-js-image-layout-fill-is-broken
+        <div style={{ width: "100%", height: "100%", position: "relative" }}>
+          <Image src="/dino.jpg" alt="Dino" layout="fill" objectFit="cover" />
+        </div>
       )}
     </motion.div>
   );
